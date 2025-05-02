@@ -1,0 +1,162 @@
+@font-face {
+    font-family: 'Figtree';
+    src: url('Figtree-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Figtree';
+    src: url('Figtree-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: italic;
+  }
+/* reset */ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body {
+    background-color: hsl(47, 88%, 63%);
+    min-height: 100vh;
+    
+}
+main {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    padding: 20px;
+    justify-content: center;
+    font-family: 'Figtree', sans-serif;
+    font-size: 16px;
+    align-items: center;
+}
+.card{
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 375px;
+    height: 540px;
+    padding: 15px;
+    border: 2px solid black;
+    box-shadow: 7px 7px 0px 0px black;
+}
+.card .learning{
+    padding: 7px;
+    font-weight: 950;
+    font-size: 13px;
+    color: hsl(0, 0%, 7%);
+    text-align: center;
+    background-color: hsl(47, 88%, 63%);
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-right: 70%;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+.card .date{
+    font-weight: 500;
+    font-size: 14px;
+    color: hsl(0, 0%, 7%);
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.card h1{
+    font-size: 20px;
+    font-weight: 950;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+.card h2{
+    color: hsl(0, 0%, 42%);
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+img{
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 10px;
+}
+.avatar{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.avatar img{
+    width: 100%;
+    max-width: 30px;
+}
+.avatar p{
+    padding: 10px;
+    font-weight: 950;
+    color: hsl(0, 0%, 7%);
+}
+footer{
+    padding: 10px;
+}
+.attribution{
+    font-size: 11px; text-align: center;
+}
+.attribution a{
+    color: hsl(228, 45%, 44%);
+}
+/* estilos desktop */
+@media screen and (min-width: 1440px) {
+    .card {
+        width: 360px;
+        padding: 24px;
+        box-shadow: 10px 10px 0 hsl(0, 0%, 7%);
+        border: 2px solid hsl(0, 0%, 7%);
+        border-radius: 12px;
+    }     
+    .card h1 {
+        font-size: 24px;
+        font-weight: 800;
+        margin-bottom: 16px;
+        color: hsl(0, 0%, 7%);
+    }    
+    .card h2 {
+        font-size: 16px;
+        font-weight: 500;
+        color: hsl(0, 0%, 42%);
+        margin-bottom: 20px;
+    }      
+    .card .learning {
+        font-size: 14px;
+        font-weight: 800;
+        background-color: hsl(47, 88%, 63%);
+        padding: 8px 12px;
+        border-radius: 8px;
+        display: inline-block;
+        margin-bottom: 16px;
+        color: hsl(0, 0%, 7%);
+    }
+    .card .date {
+        font-size: 14px;
+        font-weight: 500;
+        color: hsl(0, 0%, 7%);
+        margin-bottom: 16px;
+    }
+    .avatar p {
+        font-size: 14px;
+        font-weight: 800;
+        color: hsl(0, 0%, 7%);
+        margin-left: 12px;
+    }
+    .avatar img {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+    }
+    img {
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+}
